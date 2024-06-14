@@ -1,3 +1,7 @@
+---
+const URL = 'https://digitalwavecr.netlify.app'
+---
+
 <section class="h-screen flex justify-around items-center bg-orange-100" id="contact">
   <span class="hidden md:block">
     <h3 class="text-center text-2xl font-serif">
@@ -31,6 +35,7 @@
       <button class="hover:bg-orange-50 hover:text-black border-2 border-black rounded-md bg-orange-700 text-white px-2 transition-colors ease-in-out" type="submit">Send</button>
       
       <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value=`${URL}/thanks`>
     </form>
   </div>
 </section>
